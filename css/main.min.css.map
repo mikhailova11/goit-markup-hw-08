@@ -1,1 +1,26 @@
-{"version":3,"sources":["../sass/components/_page-header.scss","../sass/utils/_variables.scss"],"names":[],"mappings":"AAAA,YACI,qBCYuB,CDXvB,+BAAA","file":"main.min.css"}
+{
+    "version": 3,
+    "mappings": "AIAA,AAAA,WAAW,AAAA,CACP,gBAAgB,CHYO,IAAO,CGX9B,aAAa,CAAE,iBAAiB,CACnC,AACD,AAAA,eAAe,AAAC,CACZ,SAAS,CAAE,KAAK,CAChB,SAAS,CAAE,MAAM,CACjB,YAAY,CAAE,IAAI,CAClB,aAAa,CAAE,IAAI,CACnB,WAAW,CAAE,IAAI,CACjB,YAAY,CAAE,IAAI,CACrB,AAGG,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK,EADvC,AAAA,sBAAsB,AAAA,CAEd,OAAO,CAAE,IAAI,CAIpB,CElBD,AAAA,KAAK,AAAA,CACD,WAAW,CAAE,mBAAmB,CAChC,WAAW,CAAE,IAAI,CACjB,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,GAAG,CAChB,eAAe,CAAE,IAAI,CACxB,AAED,AAAA,WAAW,AAAA,CACP,KAAK,CLVkB,OAAO,CKWjC,AAED,AAAA,YAAY,AAAA,CACR,KAAK,CLPkB,IAAO,CKQjC,AAED,AAAA,WAAW,AAAA,CACP,KAAK,CLZkB,OAAO,CKa9B,YAAY,CAAE,IAAI,CACrB",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/utils/_variables.scss",
+        "../sass/components/_general.scss",
+        "../sass/utils/_placeholders.scss",
+        "../sass/components/_page-header.scss",
+        "../sass/components/_contacts.scss",
+        "../sass/components/_logo.scss",
+        "../sass/components/_hero.scss",
+        "../sass/components/_features.scss",
+        "../sass/components/_making.scss",
+        "../sass/components/_team.scss",
+        "../sass/components/_clients.scss",
+        "../sass/components/_backdrop.scss",
+        "../sass/components/_form.scss",
+        "../sass/components/_card-set.scss",
+        "../sass/components/_product.scss",
+        "../sass/components/_social-links.scss",
+        "../sass/components/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}

@@ -2,7 +2,22 @@
     background-color: $background-light;
     border-bottom: 1px solid #ECECEC;
 }
+.menu-container {
+    min-width: 320px;
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.page-hader__conteiner{
+    @media screen and (max-width: 767px) {
+        display: none;
+
+        
+    }
+}
 
 
 /*

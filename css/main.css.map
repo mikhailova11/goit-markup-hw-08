@@ -1,1 +1,26 @@
-{"version":3,"sources":["../sass/main.scss","../sass/utils/_variables.scss","../sass/components/_general.scss","../sass/components/_page-header.scss","../sass/components/_contacts.scss","../sass/components/_logo.scss","../sass/components/_hero.scss","../sass/components/_features.scss","../sass/components/_making.scss","../sass/components/_team.scss","../sass/components/_clients.scss","../sass/components/_backdrop.scss","../sass/components/_form.scss","../sass/components/_card-set.scss","../sass/components/_product.scss","../sass/components/_social-links.scss","../sass/components/_footer.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACCmB,oCAAA;AACA,6CAAA;AAEnC,QAAA;AACmC,wBAAA;AACA,yBAAA;AACA,sBAAA;AAEnC,MAAA;AACmC,sBAAA;AACA,yCAAA;AACA,qBAAA;AACA,qBAAA;AACA,iCAAA;ACdnC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CAAA;ACAA;EACI,yBFYuB;EEXvB,gCAAA;AH+DJ;;AG1DA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CAAA;ACPA,kBAAA;AACA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CAAA;ACDA;;;;;;;;;;;;;;;;;;;;;;CAAA;ACAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CAAA;ACAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CAAA;ACAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CAAA;ACAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CAAA;ACAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CAAA;ACAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CAAA;ACAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CAAA;ACAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CAAA;ACCA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CAAA;ACDA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CAAA;ACAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CAAA","file":"main.css"}
+{
+    "version": 3,
+    "mappings": ";ACCmC,qCAAqC;AACrC,8CAA8C;AAEjF,SAAS;AAC0B,yBAAyB;AACzB,0BAA0B;AAC1B,uBAAuB;AAE1D,OAAO;AAC4B,uBAAuB;AACvB,0CAA0C;AAC1C,sBAAsB;AACtB,sBAAsB;AACtB,kCAAkC;ACdrE;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAgDE;AEhDF,AAAA,WAAW,CAAA;EACP,gBAAgB,EHYO,OAAO;EGX9B,aAAa,EAAE,iBAAiB;CACnC;;AACD,AAAA,eAAe,CAAC;EACZ,SAAS,EAAE,KAAK;EAChB,SAAS,EAAE,MAAM;EACjB,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;EACnB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;CACrB;;AAGG,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EADvC,AAAA,sBAAsB,CAAA;IAEd,OAAO,EAAE,IAAI;GAIpB;;;AAGD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAqDE;AC3EF,mBAAmB;AACnB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAiDE;ACjDF,AAAA,KAAK,CAAA;EACD,WAAW,EAAE,mBAAmB;EAChC,WAAW,EAAE,IAAI;EACjB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,eAAe,EAAE,IAAI;CACxB;;AAED,AAAA,WAAW,CAAA;EACP,KAAK,ELVkB,OAAO;CKWjC;;AAED,AAAA,YAAY,CAAA;EACR,KAAK,ELPkB,OAAO;CKQjC;;AAED,AAAA,WAAW,CAAA;EACP,KAAK,ELZkB,OAAO;EKa9B,YAAY,EAAE,IAAI;CACrB;;ACpBD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAoDE;ACpDF;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EA2CE;AC3CF;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EA2DE;AC3DF;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EA0DE;AC1DF;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EA6CE;AC7CF;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAqDE;ACrDF;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAsKE;ACtKF;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EA4CE;AC3CF;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAyFE;AC1FF;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EA6CE;AC7CF;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAmLE",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/utils/_variables.scss",
+        "../sass/components/_general.scss",
+        "../sass/utils/_placeholders.scss",
+        "../sass/components/_page-header.scss",
+        "../sass/components/_contacts.scss",
+        "../sass/components/_logo.scss",
+        "../sass/components/_hero.scss",
+        "../sass/components/_features.scss",
+        "../sass/components/_making.scss",
+        "../sass/components/_team.scss",
+        "../sass/components/_clients.scss",
+        "../sass/components/_backdrop.scss",
+        "../sass/components/_form.scss",
+        "../sass/components/_card-set.scss",
+        "../sass/components/_product.scss",
+        "../sass/components/_social-links.scss",
+        "../sass/components/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

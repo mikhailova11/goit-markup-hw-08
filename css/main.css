@@ -65,6 +65,21 @@ a {
   border-bottom: 1px solid #ECECEC;
 }
 
+.menu-container {
+  min-width: 320px;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .page-hader__conteiner {
+    display: none;
+  }
+}
+
 /*
 
 .main-nav{
@@ -170,29 +185,27 @@ a {
     margin-right: 10px;   
 }
 */
-/*
-
-.logo{
-    font-family: Raleway, sans-serif;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.2;
-    text-decoration: none;
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
 }
 
-.logo__part{
-    color: $interactive;
+.logo__part {
+  color: #2196F3;
 }
 
-.logo__light{
-    color: $text-title;
+.logo__light {
+  color: #FFFFFF;
 }
 
-.logo__dark{
-    color: $secondary-color;
-    margin-right: 93px;
+.logo__dark {
+  color: #212121;
+  margin-right: 93px;
 }
-*/
+
 /*
 .hero{
     @extend %centred;
@@ -477,7 +490,7 @@ a {
     position: absolute;
     left: 50%;
     top: 50%;
-
+    
     min-width: 528px;
     min-height: 581px;
     background: #FFFFFF;
@@ -642,7 +655,7 @@ a {
 
 .button{ 
     text-align: center;
-
+    
 }
 
 .checkbox__policy-link{
@@ -776,7 +789,7 @@ a {
     justify-content: center;
     margin: -30px;
     margin-bottom: -30px;
-
+    
 }
 
 .product__span{
@@ -1007,7 +1020,7 @@ a {
 .sign-form__icon{
     margin-left: 10px;
     margin-top: 0;
-
+ 
 }
 .sign-form{
     display: flex;
@@ -1036,4 +1049,5 @@ a {
         background-color: #188CE8;
     }
 }
-*//*# sourceMappingURL=main.css.map */
+*/
+/*# sourceMappingURL=main.css.map */
