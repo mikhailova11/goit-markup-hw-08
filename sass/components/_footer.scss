@@ -1,62 +1,95 @@
-/*.footer{
+//Подвал
+
+.footer{
+    display: flex;
+    flex-direction: column;
     background-color: $background-dark;
-    padding-top: 60px;;
+    padding-top: 60px;
     padding-bottom: 60px;
 }
-
-.footer__logo{
-    display: block;
-    margin-bottom: 20px;
+.footer-tablet{
+    @media screen and (min-width:768px){
+        display: flex;
+    }
+    @media screen and (min-width:768px) and (max-width:1200px) {
+        justify-content: center;
+    }
+    @media screen and (max-width:1200px) {
+        margin-bottom: 60px;
+    } 
+    @media screen and (min-width:1200px) {
+        margin-right: 93px;
+    }
+    
 }
 .footer-section{
-    display: flex;
-    width: 1200px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin: 0 auto;
+    
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
+    @media screen and (max-width:1200px) {
+        margin-bottom: 60px;
+    } 
 }
+.sign-box{
+    @media screen and (min-width:1200px) {
+        display: inline-block;
+        
+    }  
+}
+.address-box{
+    @media screen and (max-width:768px) {
+        margin-bottom: 60px;
+    } 
+    @media screen and (min-width:768px) and (max-width:1200px){
+        margin-right: 165px;
+    } 
+    @media screen and (min-width:1200px) {
+        margin-right: 70px;
+    } 
+}
+
 
 .address__part{
+    @extend %centred;
     font-family: Roboto;
-    color: $text-title;
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em; 
+    color: $text-title;
     font-style: normal;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 9px;
+    } 
 }
-
-.contacts__list{
-    margin-bottom: 9px;
-}
-
-
 .contacts{
-    display: block;
-    display: flex;
-    justify-content: center;
+    @extend %list;
 }
-
-.contacts__link{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    font-style: normal;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin: 0;
-    color: $primary-color;
-    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus{
-        color: $interactive;
+.contacts__list{
+    &:not(:last-child){
+        margin-bottom: 8px;
+        @media screen and (min-width:1200px) {
+            margin-bottom: 9px;
+        } 
     }
+    @media screen and (max-width:1200px) {
+        text-align: center;
+    }
+    
 }
-
-
+.contacts__link{
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
 .social-box__appeal,
 .sign-box__appeal{
+    display: flex;
     font-family: Roboto;
     font-weight: 700;
     font-size: 14px;
@@ -64,71 +97,47 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $text-title;
+    margin-bottom: 20px;
+    @media screen and (max-width:1200px){
+        justify-content: center;
+    }
+    
 }
-
-.social-links{
-    display: flex;
-    margin-top: 20px;
-    margin-left: 0;
-    margin-right: 0;
-    @extend %list;
-}
-
-.social-links__list:not(:last-child){
-    margin-right: 10px;
-}
-
 .social-links__link{
+    display: flex;
+    justify-content: center;
     display: block;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus{
         background-color:  $interactive;  
     }
 }
-
-.footer__social-icon{
-    fill: $text-title;
-    margin-left: 12px;
-    margin-top: 12px; 
-}
-
-.address-box{
-    margin-right: 70px;
-}
-
-
-.sign-box{
-    margin-left: 93px;
-}
-.contacts{
-    display: inline-flex;
-    flex-direction: column;
-    @extend %list;
-}
-.contacts__link{
-    font-family: Roboto;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 14px;
-    line-height: 1.71;
-    font-style: normal;
-}
-
-
 .sign-form{
     @extend %flex;
-}
+    justify-content: center;
+    @media screen and (max-width:1200px){
+        flex-direction: column;
+        justify-content: center;
+    }
+    @media screen and (min-width:1200px) {
+        display: block;
+    }
 
+}
+.footer__social-icon{
+    fill: $text-title; 
+}
 .sign-form__input{
     background-color: $background-dark;
     padding: 16px 15px;
-    margin-top: 20px;
     margin-right: 12px;
-    min-width: 358px;
+    min-width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -142,6 +151,12 @@
         align-items: center;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
+    }
+    @media screen and (min-width:1200px) {
+        min-width: 358px;
+    } 
+    @media screen and (max-width:1200px){
+        margin-bottom: 20px;
     }
 }
 
@@ -157,7 +172,6 @@
 .sign-form__btn{
     border: none;
     padding: 10px 28px;
-    margin-top: 20px;
     min-width: 200px;
     height: 50px;
     background: $interactive;
@@ -171,10 +185,11 @@
     text-align: center;
     letter-spacing: 0.06em;
     color: $text-title;
+    cursor: pointer;
+
     transform: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus{
-        background-color: #188CE8;
+        background-color: $background-btn-interactive;
     }
 }
-*/

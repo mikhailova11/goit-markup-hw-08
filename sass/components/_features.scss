@@ -1,44 +1,73 @@
-/*
-.features{
-    padding-top: 94px;
-}
-
-.icon{
-    @extend %flex;
-    justify-content: center;
-    height: 120px;
-    background: $background-secondary;
-    border-radius: 4px;
-    margin-bottom: 30px;
-}
-
+//Блок особенности
 
 .features__item{
-    display: flex;
-}
+    @extend %list;  
 
+    @media screen and (min-width:768px) {
+        display: flex;  
+        flex-wrap: wrap;
+        margin: -15px; 
+    }
+   
+}
 .features__list{
+    display: block;
+    margin: auto;
     @extend %list;
-    width: 270px;  
-}
 
+    &:not(:last-child){
+        @media screen and (max-width:768px){
+            margin-bottom: 30px;
+            }
+    }
+
+    
+    @media screen and (min-width:768px) {
+        max-width: calc((100% - 4*15px)/2);
+        margin: 15px;   
+
+    }
+    @media screen and (min-width:1200px) {
+        max-width: calc((100% - 4*30px)/4); 
+        margin: 15px;   
+        
+    }
+}
+.features__span{
+    @extend %flex;
+    justify-content: center;
+    background: $background-secondary;
+    border-radius: 4px;
+    height: 120px;
+
+    @media screen and (max-width:768px) {
+        width: 450px;   
+    }
+    @media screen and (min-width:768px) {
+        width: 354px;
+    }
+    @media screen and (min-width:1200px) {
+        width: 270px;
+    }
+}
+.features__span:not(:last-child){
+    margin-bottom: 30px;
+}
 .features__title{
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: $secondary-color;
-}
-
-.features__content{
-    font-size: 14px;
-    line-height:1.71;   
-    color: $primary-color;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin-bottom: 10px;
 }
-
-.features__list:not(:last-child){
-    margin-right: 30px;
+.features__content{
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;            
 }
-*/

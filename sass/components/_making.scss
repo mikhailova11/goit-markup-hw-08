@@ -1,4 +1,9 @@
-/*.making{
+.making{
+    @media screen and (max-width:1200px) {
+        display: none;
+        
+    }
+}.making{
     padding-bottom: 94px;
 }
 .making__title{
@@ -57,4 +62,3 @@
 
 }
 
-*/

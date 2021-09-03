@@ -1,59 +1,111 @@
-/*
-
+//Наша команда
 .team{
     background-color: $background-secondary;
+    
 }
-
 .team__title{
     font-family: Roboto;
-    margin-bottom: 50px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
     color: $secondary-color;
-    @extend %centred;
-}
+    
 
-.team__list{
-    display: block;
-    width: 270px; 
-    background: #FFFFFF;
+    @media screen and (max-width:1199px) {
+        font-size: 28px;
+        line-height: 1.18;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width:1199px) {
+        font-size: 36px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+    }
+} 
+.team__item{
+    @extend %list;
+    display: flex;
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    @media screen and (min-width:768px) {
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+
+    
+}   
+.team__list{ 
+    background-color: $background-light;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    @extend %centred;
-    @extend %list;
-}
+    
 
-.team__list:not(:last-child){
-    margin-right: 30px;
+    &:not(:last-child){
+        @media screen and (max-width:768px) {
+            margin-bottom: 30px;
+        }
+    }
+    @media screen and (max-width:768px) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 450px;
+        height: 622px;
+        
+    }
+    @media screen and (min-width:768px) {
+        display: block;
+        max-width: 50%;
+        margin: 15px;
+        width: 354px;
+        height: 536px;
+    }
+    @media screen and (min-width:1200px) {
+        max-width: 25%;
+        margin: 15px;
+        width: 270px;
+        height: 428px;
+    }
+    
 }
-
 .team__img{
     margin-bottom: 30px;
-}
+    width: 100%;
 
+    @media screen and (max-width:768px) {
+        height: 460px;
+
+        background-image: url();
+    }
+    @media screen and (min-width:768px) {
+        height: 374px;
+
+        background-image: url();
+    }
+    @media screen and (min-width:1200px) {
+        height: 260px;
+
+        background-image: url();
+    }
+}
 .team__name{
     font-family: Roboto;
-    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em; 
-    color: $secondary-color;  
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $secondary-color;
+    @extend %centred;
     margin-bottom: 10px;
 }
-
 .team__post{
     font-family: Roboto;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: &primery-color;
+    @extend %centred;
     margin-bottom: 16px;
 }
-
-.team__item{
-    @extend %flex;
-}
-
-*/

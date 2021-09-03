@@ -1,15 +1,52 @@
-/*
-
-.team__social-links{
-    padding-bottom: 30px;
-    padding-left: 32px;
-    padding-right: 32px;
+//Социальные сети
+.mob-menu__social-links{
+    display: flex;
+    @extend %list; 
+    position: fixed;
+    bottom: 42px;
+    cursor: pointer;
 }
+.mob-menu__social-list:not(:last-child){
+    margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+}
+.mob-menu__social-link{
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $interactive;
+}
+.team__social-links{
 
+
+    @media screen and (max-width: 767px){
+        padding-bottom: 24px;
+        padding-left: 122px;
+        padding-right: 122px;
+    }
+
+    @media screen and (min-width: 768px){
+        padding-bottom: 24px;
+        padding-left: 74px;
+        padding-right: 74px;
+    }
+
+    @media screen and (min-width: 1200px){
+        padding-bottom: 30px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
 .social-links{
     display: flex; 
+    justify-content: center;
+    @extend %list; 
+    
 }
-
 .social-links__list{
     display: block;
     height: 44px;
@@ -18,29 +55,28 @@
     background-position: center;
     border-radius: 50%; 
     cursor: pointer;
-    color: currentColor;
-    @extend %list;
+
     &:not(:last-child){
         margin-right: 10px;
     }
 }
-
 .social-links__icon{
     fill: currentColor;
     margin-top: 12px; 
 }
-
 .social-links__link{
-    display: inline-block;
+    display: flex;
+    text-align: center;
+    justify-content: center;
     height: 44px;
     width: 44px;
     border-radius: 50%;
     color: currentColor;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    
     &:hover,
     &:focus{
         background-color: $interactive;
         color: $text-title;
     }
 }
-*/

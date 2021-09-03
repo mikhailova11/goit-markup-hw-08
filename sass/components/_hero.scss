@@ -1,9 +1,9 @@
-/*
+//Блок герой
 .hero{
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-color: #000;
     @extend %centred;
-    background: $background-dark;
-    padding-top: 200px;
-    padding-bottom: 200px;
     max-width : 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -12,42 +12,87 @@
     background-size: cover;
     background-image: linear-gradient(
     rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/img22.jpg);
-}
+    rgba(47, 48, 58, 0.4)),
+    url(/images/bg-mobile.jpg);
 
+    @media screen and (min-width:1200px){
+        padding-top: 200px;
+        padding-bottom: 200px;
+    } 
+}
 .hero__title{
+    font-family: Roboto;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    color: $text-title;
+    font-size: 26px;
+    line-height: 1.16;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-bottom: 30px;
-}
+    color: $text-title;
 
+    @media screen and (min-width:1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+    }   
+}
 .hero__btn{
-    display: inline-block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    color: $text-title;
     font-family: Roboto;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.87;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background-color: $interactive;
     min-width: 200px;
-    background: $background-btn-control;
-    cursor: pointer;
-    color: $text-title;
-    border-radius: 4px;
+    height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transform: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
     &:hover,
     &:focus{
-        background-color: #188CE8
+        background-color: $background-btn-interactive;
+    }
+
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero{
+        background-image: url(/images/bg-mobile-2x.jpg);
     }
 }
 
-*/
+@media (min-width:768px) {
+    .hero{
+        background-image: url(/images/bg-tablet.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero{
+                background-image: url(/images/bg-tablet-2x.jpg);
+            }
+    }
+}
+@media (min-width:1200px) {
+    .hero{
+        background-image: url(/images/bg-dasktop.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero{
+                background-image: url(/images/bg-dasktop-2x.jpg);
+            }
+    }
+}

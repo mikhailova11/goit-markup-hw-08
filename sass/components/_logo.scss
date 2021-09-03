@@ -1,12 +1,19 @@
-/*
-.logo{
-    font-family: Raleway, sans-serif;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.2;
-    text-decoration: none;
-}
+//Лого
 
+.logo{
+    margin: auto;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    @media screen and (max-width: 1200px){
+        font-size: 24px;
+        line-height: 1.16;  
+    }
+    @media screen and (min-width: 1200px){
+        font-size: 26px;
+        line-height: 1.2; 
+    }
+}
 .logo__part{
     color: $interactive;
 }
@@ -17,6 +24,24 @@
 
 .logo__dark{
     color: $secondary-color;
-    margin-right: 93px;
+
+    @media screen and (min-width: 768px){
+        margin-right: 88px;
+    }
+
+    @media screen and (min-width: 1200px){
+        margin-right: 93px;
+    } 
 }
-*/
+.footer__logo{
+    display: flex;
+    margin-bottom: 20px;
+    @media screen and (max-width: 1200px){
+        align-items: center;
+        justify-content: center;
+    } 
+}
+.mob-menu__logo{
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
