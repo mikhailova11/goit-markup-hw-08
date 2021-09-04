@@ -1,4 +1,7 @@
 //Социальные сети
+.team__social-links{
+    color: #AFB1B8;
+}
 .mob-menu__social-links{
     display: flex;
     @extend %list; 
@@ -21,8 +24,6 @@
     color: $interactive;
 }
 .team__social-links{
-
-
     @media screen and (max-width: 767px){
         padding-bottom: 24px;
         padding-left: 122px;

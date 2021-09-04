@@ -55,7 +55,6 @@
 }
 .features__title{
     display: flex;
-    justify-content: center;
     font-family: Roboto;
     font-weight: 700;
     font-size: 14px;
@@ -64,6 +63,10 @@
     text-transform: uppercase;
     color: $secondary-color;
     margin-bottom: 10px;
+
+    @media screen and (max-width:768px) {
+        justify-content: center;   
+    }
 }
 .features__content{
     font-family: Roboto;

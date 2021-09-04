@@ -24,10 +24,6 @@
 .contacts-box{
     @extend %list;
 
-    @media screen and (max-width:767px) {
-        margin-bottom: 64px;   
-    }
-
     @media screen and (min-width:768px) {
         display: block;
         margin-left: 0;
