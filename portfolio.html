@@ -10,6 +10,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
+    <!-- скрипт для кнопки вверх -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ 
+<script type="text/javascript">
+ 
+$(function() {
+ 
+$(window).scroll(function() {
+ 
+if($(this).scrollTop() != 0) {
+ 
+$('#toTop').fadeIn();
+ 
+} else {
+ 
+$('#toTop').fadeOut();
+ 
+}
+ 
+});
+ 
+$('#toTop').click(function() {
+ 
+$('body,html').animate({scrollTop:0},800);
+ 
+});
+ 
+});
+ 
+</script>
 </head>
 <body>
     <!--Шапка сайта-->
@@ -387,5 +417,10 @@
         crossorigin="anonymous"></script>
     <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script> 
+    <DIV ID = "toTop" >
+        <svg class="to-top">
+          <use href="./images/icons.svg#icon-circle-up"></use>
+        </svg>
+      </DIV>
 </body>
 </html>
